@@ -10,6 +10,7 @@ app = Flask(__name__)
 
 BASE_URL = 'http://ieeexplore.ieee.org.sci-hub.io/document/'
 
+
 def get_download_url(paper_url):
     document_number = re.findall("[0-9]+", paper_url)
     REQUIRED_URL = BASE_URL + document_number[0] + '/'
@@ -32,7 +33,6 @@ def index():
         'author_url': 'http://viveksb007.github.io/',
         'Description': 'This would give PDF download link for IEEE papers, its built on top of SCI-HUB, So a big thanks to those guys :D'
     })
-
 
 
 if __name__ == '__main__':

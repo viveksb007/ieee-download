@@ -350,6 +350,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAgAEAAIABAADAAwAA4AcAAPgfAAA=" rel="icon" type="image/x-i
         $('#submit').click(function () {
             if ($.trim($('#inputURL').val()) == '') {
                 alert('Give a valid URL to download');
+                return false;
             }
         });
     </script>
